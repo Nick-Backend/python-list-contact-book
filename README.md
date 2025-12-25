@@ -2,22 +2,28 @@
 
 ---
 
-### 📝 Loyihaning tavsifi
+### 📝 Loyiha haqida
 
-`Contact Book` — bu Python dasturlash tilida yozilgan konsol ilovasi bo‘lib, foydalanuvchiga kontaktlar bilan quyidagi funksiyalarni bajarish imkonini beradi:
+**Contact Book** — bu Python dasturlash tilida yozilgan **oddiy va qulay konsol ilovasi** bo‘lib, foydalanuvchiga kontaktlar bilan ishlash imkonini beradi. Ushbu loyiha asosan **boshlovchi dasturchilar** uchun Python asoslarini mustahkamlash maqsadida ishlab chiqilgan.
 
-* ➕ Yangi kontakt qo‘shish
-* 📄 Barcha kontaktlarni ko‘rish
-* 🔍 Ism bo‘yicha qidirish
-* 📧 Faqat `@gmail.com` domenli kontaktlarni ko‘rish
-
-Kontaktlar `list[str]` ko‘rinishida `"name|phone|email"` formatda saqlanadi.
+Ilova kontaktlarni `list[tuple]` formatida saqlaydi va ular ustida turli amallarni bajarishga imkon beradi.
 
 ---
 
-### 📂 Foydalanish
+### ⚙️ Asosiy imkoniyatlar
 
-#### 🛠️ Dastur qanday ishga tushiriladi:
+Ilova orqali quyidagi funksiyalarni bajarish mumkin:
+
+* ➕ Yangi kontakt qo‘shish
+* 📄 Barcha kontaktlar ro‘yxatini ko‘rish
+* 🔍 Kontaktni ism orqali qidirish
+* 📧 Faqat `@gmail.com` domeniga ega kontaktlarni filtrlash
+
+---
+
+### 📂 Dasturni ishga tushirish
+
+Loyihani ishga tushirish uchun terminalda quyidagi buyruqni bajaring:
 
 ```bash
 python main.py
@@ -25,55 +31,26 @@ python main.py
 
 ---
 
-### 📋 Menyu imkoniyatlari:
+### 📋 Menyu bo‘limlari
 
-| Raqam | Amaliyot                              |
-| ----- | ------------------------------------- |
-| 1     | Yangi kontakt qo‘shish                |
-| 2     | Barcha kontaktlarni ko‘rish           |
-| 3     | Kontaktni ism bo‘yicha qidirish       |
-| 4     | Faqat @gmail.com kontaktlarni ko‘rish |
-| 5     | Dasturni yakunlash                    |
-
----
-
-### 📌 Texnologiyalar
-
-* **Til:** Python 3.9+
-* **Typing:** `List[str]`
-* **Uslub:** Google docstring style
-* **Xavfsizlik:** `try-except` ishlatilmagan — inputlar if orqali tekshiriladi
+| Raqam | Amal tavsifi                            |
+| ----: | --------------------------------------- |
+|     1 | Yangi kontakt qo‘shish                  |
+|     2 | Barcha kontaktlarni ko‘rish             |
+|     3 | Kontaktni ism bo‘yicha qidirish         |
+|     4 | Faqat `@gmail.com` kontaktlarni ko‘rish |
+|     5 | Dasturdan chiqish                       |
 
 ---
 
-### 📚 Namuna kontaktlar
+### 🎯 Loyiha maqsadi
 
-```text
-Ali|998901234567|ali@gmail.com
-Vali|998911112233|vali@yahoo.com
-Sami|998939998877|sami@gmail.com
-```
-
----
-
-### 🚫 Xatoliklar oldini olish
-
-* Foydalanuvchi noto‘g‘ri tanlov kiritsa ogohlantiriladi
-* Har bir kontakt kiritish paytida ism, telefon va email bo‘sh qolmasligi shart
-* `"|"` belgisi orqali bo‘linmagan noto‘g‘ri formatdagi kontaktlar aniqlanadi
-
----
-
-### ✅ Kelajakdagi imkoniyatlar (rejalashtirilgan)
-
-* [ ] Faylga saqlash (`save to .txt` yoki `.json`)
-* [ ] Fayldan o‘qish (`load on startup`)
-* [ ] Kontaktni tahrirlash
-* [ ] Kontaktni o‘chirish
-* [ ] Foydalanuvchi interfeysi uchun GUI (Tkinter yoki PyQt)
+* Python asosiy tushunchalarini amaliyotda qo‘llash
+* `list`, `tuple`, `if-else`, `loop` va `function` lar bilan ishlashni o‘rganish
+* Konsol ilova tuzilishini tushunish
 
 ---
 
 ### 📄 Litsenziya
 
-Bu loyiha ochiq kodli va o‘rganish maqsadida yaratilgan. Xohlagan tarzda foydalanishingiz mumkin.
+Ushbu loyiha **ochiq kodli** bo‘lib, ta’lim va o‘rganish maqsadlarida yaratilgan. Istalgan tarzda foydalanish, o‘zgartirish va rivojlantirish mumkin.
